@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="">
+        <div>
+            <label for="firstname">first name:</label>
+            <br>
+            <input type="text" name="firstname" id="firstname" placeholder="Enter your first name" autofocus>
+        </div>
+        <div>
+            <label for="Lastname">last name:</label>
+            <br>
+            <input type="text" name="lastname" id="lastname" placeholder="Enter your Last name">
+        </div>
+        <div>
+            <label for="Password">Password:</label>
+            <br>
+            <input type="password" name="Password" id="Password" placeholder="Enter your Password">
+        </div>
+        <div>
+            <label for="decade">decade:</label>
+            <br>
+            <input type="number" name="decade" id="decade" min="1980" max="2020" step="10" value="2000">
+        </div>
+        <div>
+            <label for="games"> Favorite games </label>
+            <select name="games" id="games">
+                <optgroup label="Outdoor games">
+                    <option value="basketball">Basketball</option>
+                    <option value="football">Football</option>
+                    <option value="cricket">Cricket</option>
+
+                </optgroup>
+                <optgroup label="Indoor games">
+                    <option value="chess">chess</option>
+                    <option value="carrom">carrom</option>
+                    <option value="card">card</option>
+
+                </optgroup>
+
+            </select>
+        </div>
+        <div>
+            <label for="beverages"> Favorite Beverages</label>
+            <input type="text" name="beverages" id="beverages" list="beverages-list">
+            <datalist id="beverages-list">
+                <option value="cofee"></option>
+                <option value="tea"></option>
+                <option value="juice"></option>
+
+            </datalist>
+        </div>
+        <hr>
+        <section>
+            <fieldset>
+                <legend>What is your favorite programing language?</legend>
+                <div>
+                    <input type="radio" name="python" id="python" value="python">
+                    <label>Python</label>
+                </div>
+                <div>
+                    <input type="radio" name="java" id="java" value="java">
+                    <label>Java</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="c++" id="c++" value="C++">
+                    <label>C++</label>
+                </div>
+            </fieldset>
+        </section>
+        <hr>
+        <div>
+            <fieldset>
+                <legend>Which frame work do you like?</legend>
+                <div>
+                    <input type="checkbox" name="java" id="java" value="java">
+                    <label for="java"> java</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="selenium" id="selenium" value="selenium">
+                    <label for="selenium"> selenium</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="C++" id="C++" value="C++">
+                    <label for="C++">C++</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="java" id="java" value="java">
+                    <label for="java"> java</label>
+                </div>
+            </fieldset>
+        </div>
+
+
+    </form>
+</body>
+
+</html>
