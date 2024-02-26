@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <form action="">
+    <form action="https://httpbin.org/get" method="get">
         <div>
             <label for="firstname">first name:</label>
             <br>
@@ -98,7 +98,20 @@
                 </div>
             </fieldset>
         </div>
+        <div>
+            <fieldset>
+                <legend>your message</legend>
 
+                <label for="message">send a message</label>
+                <br>
+                <textarea cols="30" rows="10" name="message" id="message"
+                    placeholder="Type your message here"></textarea>
+            </fieldset>
+        </div>
+        <br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
 
     </form>
 </body>
